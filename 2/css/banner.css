@@ -1,0 +1,10 @@
+* { margin: 0; padding: 0 }
+li { list-style: none }
+.banner-container { width: 1120px; height: 400px; margin:50px auto; position: relative }
+.banner-wrapper { width: 1120px; height: 400px; position: relative; overflow: hidden }
+.banner-item { width: 1120px; height: 400px; position: absolute; text-align: center; line-height: 400px; font-size: 100px; background: #fff; box-sizing: border-box }
+.banner-item img { width: 1120px; height: 400px }
+.banner-item.active { z-index: 2 }
+.button-prev, .button-next { height: 60px; width: 40px; background:#999; position: absolute; z-index: 999; text-align: center; line-height: 60px; cursor: pointer; color: #fff }
+.button-prev { left: 0; top: 50%; margin-top: -30px }
+.button-next { right: 0; top: 50%; margin-top: -30px }

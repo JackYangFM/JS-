@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="css/banner.css">
+    <title>Banner</title>
+</head>
+<body>
+    <div class="banner-container">
+        <!--轮播图容器-->
+        <div class="banner-wrapper">
+            <div class="banner-item active"><img src="images/4.jpg" alt=""></div>
+            <div class="banner-item"><img src="images/2.jpg" alt=""></div>
+            <div class="banner-item"><img src="images/3.jpg" alt=""></div>
+            <div class="banner-item"><img src="images/1.jpg" alt=""></div>
+        </div>
+        <!--轮播图按钮-->
+        <div class="button-prev" id="prev"> < </div>
+        <div class="button-next" id="next"> > </div>
+        
+    </div>
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/jquery.banner.js"></script>
+    <script>     
+        $(function(){
+            $.Banner({
+            animate: "fade",//2种动效 slide | fade 
+            nextBtn: $("#next"),
+            prevBtn: $("#prev"),
+            autoPlay: true,
+            })
+        })
+    </script>
+</body>
+</html>
